@@ -1,6 +1,8 @@
 const elementoParaInserirLivros = document.getElementById('livros')
+const elementoComValorTotalDeLivrosDisponiveis = document.getElementById('valor_total_livros_disponiveis')
 
 function exibirOsLivrosNaTela(listaDeLivros) {
+    elementoComValorTotalDeLivrosDisponiveis.innerHTML = ''
     elementoParaInserirLivros.innerHTML = ''
     listaDeLivros.forEach(livro => {
         // let disponibilidade = verificarDisponibilidadeDoLivro(livro)
@@ -29,4 +31,3 @@ function exibirOsLivrosNaTela(listaDeLivros) {
 //     return 'livros__imagens indisponivel'
 //   }
 // }
-//solução acima com o mesmo resultado da linha 7 porem mais verboso e com maior legibilidade
